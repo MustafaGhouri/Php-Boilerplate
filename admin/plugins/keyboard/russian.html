@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Keyboard | Russian</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="">
+	<style>
+	.as {
+    padding-bottom: 0px !important;
+}
+	.spgrey {
+		color: #666666;
+		font-family: Times New Roman, Arial, sans-serif;
+		font-size: 1.2em;
+	}
+	
+	.tabl tr {
+		vertical-align: top;
+		text-align: center;
+	}
+	
+	.tabl td {
+		padding-left: 0.3em;
+		padding-right: 0.3em;
+	}
+    .flex{
+        justify-content: center;
+    display: flex;
+    }
+	.as {
+		padding-bottom: 0px !important;
+	}
+	</style>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	
+
+</head>
+
+<body onLoad="conversion.saisie.focus()">
+
+	<div class="name">
+		<br> <span class="kb-t">Russian - Русский</span></div>
+
+	<div class="esp"></div>
+	<div class="center">
+		<form>
+			<select name="select" onChange="window.location=this.options[this.selectedIndex].value">
+				<option disabled selected>Select Language</option>
+				<option value="arabic.html">Arabic</option>
+				<option value="russian.html">Russian</option>
+				<option value="korean.html">Korean</option>
+				<option value="hindi.html">Hindi</option>
+				<option value="urdu.html">Urdu</option>
+			</select>
+		</form>
+
+		<br>
+		<form name="conversion">
+		
+			<textarea name="saisie" id="bar" onKeyUp="transcrire()" rows="4" class="cadr"></textarea>
+			<br>
+			<br>
+		<div class="flex">
+			<div class="bg_color">
+		
+            <div class="as">
+				<p>
+					<input type="button" class="bt" title="clear" onclick="reset();conversion.saisie.focus()" value="clear">
+				</p>
+                <p>
+					<input type="button" class="bt bf" data-clipboard-action="copy" data-clipboard-target="#bar" value="copy">
+				</p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('А')" value="А">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('а')" value="а">
+                <p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Б')" value="Б">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('б')" value="б">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('В')" value="В">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('в')" value="в">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Г')" value="Г">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('г')" value="г">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Д')" value="Д">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('д')" value="д">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Е')" value="Е">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('е')" value="е">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Ё')" value="Ё">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('ё')" value="ё">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Ж')" value="Ж">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('ж')" value="ж">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('З')" value="З">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('з')" value="з">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('И')" value="И">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('и')" value="и">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Й')" value="Й">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('й')" value="й">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('К')" value="К">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('к')" value="к">
+					<p>
+			</div>
+			
+			
+			<div class="as" >
+                <p>
+					<input type="button" class="bt bf" onClick="onPressBackspace()" value="backspace">
+                </p>
+				<p>
+					<input type="button" class="bt bf" id="newLineButton"  value="enter" style="width: 100%;">
+				</p>
+            </div>
+			<div class="esp mobnul"></div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Л')" value="Л">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('л')" value="л">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('М')" value="М">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('м')" value="м">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Н')" value="Н">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('н')" value="н">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('О')" value="О">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('о')" value="о">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('П')" value="П">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('п')" value="п">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Р')" value="Р">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('р')" value="р">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('С')" value="С">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('с')" value="с">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Т')" value="Т">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('т')" value="т">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('У')" value="У">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('у')" value="у">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Ф')" value="Ф">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('ф')" value="ф">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Х')" value="Х">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('х')" value="х">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Ц')" value="Ц">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('ц')" value="ц">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Ч')" value="Ч">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('ч')" value="ч">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Ш')" value="Ш">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('ш')" value="ш">
+					<p>
+			</div>
+			<div class="as">
+				
+				<p>
+					<input type="button" class="bt" onclick="alpha('Щ')" value="Щ">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('щ')" value="щ">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Ъ')" value="Ъ">
+				</p>
+				<p>
+					<input type="button" class="bt" onclick="alpha('ъ')" value="ъ">
+					<p>
+			</div>
+		
+			<div class="esp"></div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Ы')" value="Ы">
+				</p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('ы')" value="ы">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Ь')" value="Ь">
+				</p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('ь')" value="ь">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Э')" value="Э">
+				</p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('э')" value="э">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Ю')" value="Ю">
+				</p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('ю')" value="ю">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Я')" value="Я">
+				</p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('я')" value="я">
+					<p>
+			</div>
+            <div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('і')" value="і">
+				</p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('І')" value="І">
+					<p>
+			</div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('ѣ')" value="ѣ">
+				</p>
+			</div>
+            <div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Ѣ')" value="Ѣ">
+					<p>
+			</div>
+            <div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('ѳ')" value="ѳ">
+				</p>
+			</div>
+            <div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Ѳ')" value="Ѳ">
+					<p>
+			</div>
+			<div class="esp"></div>
+			<div class="as">
+                <p>
+				<input type="button" class="bt" onclick="alpha('«')" value="«">
+                </p>
+            </div>
+			<div class="as">
+                <p>
+				<input type="button" class="bt" onclick="alpha('»')" value="»">
+                </p>
+            </div>
+			<div class="as">
+                <p>
+				<input type="button" class="bt" onclick="alpha('„')" value="„">
+                </p>
+            </div>
+			<div class="as">
+                <p>
+				<input type="button" class="bt" onclick="alpha('“')" value="“">
+                </p>
+            </div>
+			<div class="as">
+                <p>
+				<input type="button" class="bt" onclick="alpha('—')" value="—">
+                </p>
+            </div>
+            <div class="as" style="width: 208px;padding-bottom: 0px;">
+                <p>
+                    <input type="button" class="bt bf" onClick="alpha(' ')"  value="space" style="width: 100%;">
+                </p>
+            </div>
+			<div class="as">
+                <p>
+				<input type="button" class="bt" onclick="alpha('…')" value="…">
+                </p>
+            </div>
+			<div class="as">
+                <p>
+				<input type="button" class="bt" onclick="alpha('́')" value="&nbsp;́" title="accent">
+                </p>
+            </div>
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('ѵ')" value="ѵ">
+				</p>
+			</div>
+            
+			<div class="as">
+				<p>
+					<input type="button" class="bt" onclick="alpha('Ѵ')" value="Ѵ">
+					<p>
+			</div>
+            <div class="as" style="padding-bottom: 0px;">
+                <p>
+                    <input type="button" class="bt bf" onClick="save()" value="save">
+					
+                </p>
+            </div>
+			<div class="esp"></div>
+
+        </div>
+        </div>
+			 </form>
+	</div>
+	<div class="espb"></div>
+	<script src="assets/code/base.js"></script>
+	<script src="assets/code/carru.js"></script>
+	<script src="assets/code/clipboard.js"></script>
+	<script src="assets/code/savee.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</body>
+
+</html>
+<script>
+	$('#newLineButton').click(function () {
+		var inp = $('#bar').val();
+		$('#bar').val(inp+'\r\n').focus();
+	})
+
+	
+	function onPressBackspace() {
+	var myTextarea = document.getElementById("bar");
+    myTextarea.value = myTextarea.value.substring(0, myTextarea.value.length - 1);
+	myTextarea.focus();
+	}
+    var clipboard = new Clipboard('.bf');
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+	$(document).ready(function() {
+    $('select').select2();
+	});
+    </script>

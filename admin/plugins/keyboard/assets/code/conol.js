@@ -1,0 +1,88 @@
+//  copyright lexilogos.com
+var car;
+
+function latol() {
+car = document.transcription.text2.value;
+car = car.replace(/a/g, "ᱚ");
+car = car.replace(/t/g, "ᱛ");
+car = car.replace(/ṭ/g, "ᱴ");
+car = car.replace(/ᱛ=/g, "ᱴ");
+car = car.replace(/ᱴ=/g, "ᱛ");
+car = car.replace(/g/g, "ᱜ");
+car = car.replace(/l/g, "ᱞ");
+car = car.replace(/ā/g, "ᱟ");
+car = car.replace(/A/g, "ᱟ");
+car = car.replace(/ᱚᱚ/g, "ᱟ");
+car = car.replace(/k/g, "ᱠ");
+car = car.replace(/j/g, "ᱡ");
+car = car.replace(/m/g, "ᱢ");
+car = car.replace(/ṃ/g, "ᱝ");
+car = car.replace(/ᱢ=/g, "ᱝ");
+car = car.replace(/ᱝ=/g, "ᱢ");
+car = car.replace(/w/g, "ᱣ");
+car = car.replace(/i/g, "ᱤ");
+car = car.replace(/s/g, "ᱥ");
+car = car.replace(/n/g, "ᱱ");
+car = car.replace(/ṇ/g, "ᱬ");
+car = car.replace(/ᱱ=/g, "ᱬ");
+car = car.replace(/ṅ/g, "ᱶ");
+car = car.replace(/ᱬ=/g, "ᱶ");
+car = car.replace(/ñ/g, "ᱧ");
+car = car.replace(/ᱶ=/g, "ᱧ");
+car = car.replace(/ᱧ=/g, "ᱱ");
+car = car.replace(/r/g, "ᱨ");
+car = car.replace(/ṛ/g, "ᱲ");
+car = car.replace(/ᱨ=/g, "ᱲ");
+car = car.replace(/ᱲ=/g, "ᱨ");
+car = car.replace(/u/g, "ᱩ");
+car = car.replace(/c/g, "ᱪ");
+car = car.replace(/d/g, "ᱫ");
+car = car.replace(/ḍ/g, "ᱰ");
+car = car.replace(/ᱫ=/g, "ᱰ");
+car = car.replace(/ᱰ=/g, "ᱫ");
+car = car.replace(/y/g, "ᱭ");
+car = car.replace(/e/g, "ᱮ");
+car = car.replace(/p/g, "ᱯ");
+car = car.replace(/o/g, "ᱳ");
+car = car.replace(/b/g, "ᱵ");
+car = car.replace(/h/g, "ᱷ");
+car = car.replace(/ẖ/g, "ᱦ");
+car = car.replace(/ᱷ=/g, "ᱦ");
+car = car.replace(/ᱦ=/g, "ᱷ");
+document.transcription.text1.value = car;
+}
+
+function ollat() {
+car = document.transcription.text1.value;
+car = car.replace(/ᱚ/g, "a");
+car = car.replace(/ᱛ/g, "t");
+car = car.replace(/ᱜ/g, "g");
+car = car.replace(/ᱝ/g, "ṃ");
+car = car.replace(/ᱞ/g, "l");
+car = car.replace(/ᱟ/g, "ā");
+car = car.replace(/ᱠ/g, "k");
+car = car.replace(/ᱡ/g, "j");
+car = car.replace(/ᱢ/g, "m");
+car = car.replace(/ᱣ/g, "w");
+car = car.replace(/ᱤ/g, "i");
+car = car.replace(/ᱥ/g, "s");
+car = car.replace(/ᱦ/g, "ẖ");
+car = car.replace(/ᱧ/g, "ñ");
+car = car.replace(/ᱨ/g, "r");
+car = car.replace(/ᱩ/g, "u");
+car = car.replace(/ᱪ/g, "c");
+car = car.replace(/ᱫ/g, "d");
+car = car.replace(/ᱬ/g, "ṇ");
+car = car.replace(/ᱭ/g, "y");
+car = car.replace(/ᱮ/g, "e");
+car = car.replace(/ᱯ/g, "p");
+car = car.replace(/ᱰ/g, "ḍ");
+car = car.replace(/ᱱ/g, "n");
+car = car.replace(/ᱲ/g, "ṛ");
+car = car.replace(/ᱳ/g, "o");
+car = car.replace(/ᱴ/g, "ṭ");
+car = car.replace(/ᱵ/g, "b");
+car = car.replace(/ᱶ/g, "ṅ");
+car = car.replace(/ᱷ/g, "h");
+document.transcription.text2.value = car;
+}

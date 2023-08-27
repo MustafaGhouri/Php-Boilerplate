@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Keyboard | Korean</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="Keywords" content="">
+	<link rel="shortcut icon" href="">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <style>
+        .as {
+            padding-bottom: 0px !important;
+        }
+        .flex{
+            justify-content: center;
+            display: flex;
+            }
+    </style>
+</head>
+
+<body onLoad="conversion.saisie.focus()">
+	<div class="name">
+		<br> <span class="kb-t">Korean  &nbsp; &#54620;&#44397;&#47568;</span>
+    </div>
+
+	<div class="esp"></div>
+
+	<div class="center">
+		<form>
+			<select name="select" onChange="window.location=this.options[this.selectedIndex].value">
+				<option disabled selected>Select Language</option>
+				<option value="arabic.html">Arabic</option>
+				<option value="russian.html">Russian</option>
+				<option value="korean.html">Korean</option>
+				<option value="hindi.html">Hindi</option>
+				<option value="urdu.html">Urdu</option>
+			</select>
+		</form>
+
+		<br>
+		<form name="conversion">
+		
+			<textarea name="saisie" id="bar" onKeyup="saisir();" rows="4" class="cadr"></textarea>
+			<br>
+            <br>
+            <div class="flex">
+                <div class="bg_color">
+			
+			
+			<div class="as">
+                <span class="positionss">n</span>
+				<p>
+					<input type="button" class="bt" title="nieun" onclick="alpha('ᄂ');transcrire()" value="ᄂ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">d/t</span>
+				<p>
+					<input type="button" class="bt" title="digeut" onclick="alpha('ᄃ');transcrire()" value="ᄃ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">tt</span>
+				<p>
+					<input type="button" class="bt" title="ssasng-digeut" onclick="alpha('ᄄ');transcrire()" value="ᄄ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">r</span>
+				<p>
+					<input type="button" class="bt" title="rieul" onclick="alpha('ᄅ');transcrire()" value="ᄅ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">m</span>
+				<p>
+					<input type="button" class="bt" title="mieum" onclick="alpha('ᄆ');transcrire()" value="ᄆ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">b/p</span>
+				<p>
+					<input type="button" class="bt" title="bieup" onclick="alpha('ᄇ');transcrire()" value="ᄇ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">pp</span>
+				<p>
+					<input type="button" class="bt" title="ssang-bieup" onclick="alpha('ᄈ');transcrire()" value="ᄈ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">s</span>
+				<p>
+					<input type="button" class="bt" title="siot" onclick="alpha('ᄉ');transcrire()" value="ᄉ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ss</span>
+				<p>
+					<input type="button" class="bt" title="ssang-siot" onclick="alpha('ᄊ');transcrire()" value="ᄊ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ng</span>
+				<p>
+					<input type="button" class="bt" title="ieung" onclick="alpha('ᄋ');transcrire()" value="ᄋ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">j</span>
+				<p>
+					<input type="button" class="bt" title="jieut" onclick="alpha('ᄌ');transcrire()" value="ᄌ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">jj</span>
+				<p>
+					<input type="button" class="bt" title="ssang-jieut" onclick="alpha('ᄍ');transcrire()" value="ᄍ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ch</span>
+				<p>
+					<input type="button" class="bt" title="chieut" onclick="alpha('ᄎ');transcrire()" value="ᄎ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">K</span>
+				<p>
+					<input type="button" class="bt" title="kieuk" onclick="alpha('ᄏ');transcrire()" value="ᄏ">
+				</p>
+			</div>
+			
+			
+			<div class="as" style="width: 108px;">
+                <p>
+					<input type="button" class="bt bf" onClick="onPressBackspace()" value="backspace" style="width: 100%;">
+                </p>
+            </div>
+			
+			<div class="esp"></div>
+            
+            
+			<div class="as">
+                <span class="positionss">om</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('옴');transcrire()" value="옴">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ong</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('옹');transcrire()" value="옹">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">a</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('아');transcrire()" value="아">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ak</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('악');transcrire()" value="악">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">an</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('안');transcrire()" value="안">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">al</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('알');transcrire()" value="알">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">am</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('암');transcrire()" value="암">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ap</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('압');transcrire()" value="압">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ang</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('앙');transcrire()" value="앙">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">aP</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('앞');transcrire()" value="앞">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ae</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('애');transcrire()" value="애">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">aek</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('액');transcrire()" value="액">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">aeng</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('앵');transcrire()" value="앵">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ya</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('야');transcrire()" value="야">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yan</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('얀');transcrire()" value="얀">
+				</p>
+			</div>
+			
+			<div class="as" style="width:72px;">
+				<p>
+					<input type="button" class="bt bf" id="newLineButton"  value="enter" style="width: 100%;">
+				</p>
+            </div>
+			<div class="esp"></div>
+			
+			
+			<div class="as">
+                <span class="positionss">T</span>
+				<p>
+					<input type="button" class="bt" title="tieut" onclick="alpha('ᄐ');transcrire()" value="ᄐ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">P</span>
+				<p>
+					<input type="button" class="bt" title="pieup" onclick="alpha('ᄑ');transcrire()" value="ᄑ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">h</span>
+				<p>
+					<input type="button" class="bt" title="hieut" onclick="alpha('ᄒ');transcrire()" value="ᄒ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yang</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('양');transcrire()" value="양">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yae</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('얘');transcrire()" value="얘">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">eo</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('어');transcrire()" value="어">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">eok</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('억');transcrire()" value="억">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">eon</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('언');transcrire()" value="언">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">eol</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('얼');transcrire()" value="얼">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">eom</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('엄');transcrire()" value="엄">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">eop</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('업');transcrire()" value="업">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">eong</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('엉');transcrire()" value="엉">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">e</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('에');transcrire()" value="에">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yeo</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('여');transcrire()" value="여">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yeok</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('역');transcrire()" value="역">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yeon</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('연');transcrire()" value="연">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yeol</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('열');transcrire()" value="열">
+				</p>
+			</div>
+		
+			
+			<div class="esp"></div>
+			
+			<div class="as">
+                <span class="positionss">yeong</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('영');transcrire()" value="영">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ye</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('예');transcrire()" value="예">
+				</p>
+			</div>
+            <div class="as">
+                <span class="positionss">o</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('오');transcrire()" value="오">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ok</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('옥');transcrire()" value="옥">
+				</p>
+			</div>
+            <div class="as">
+                <span class="positionss">on</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('온');transcrire()" value="온">
+				</p>
+			</div>
+			
+			<div class="as">
+                <span class="positionss">wa</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('와');transcrire()" value="와">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">wan</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('완');transcrire()" value="완">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">wal</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('왈');transcrire()" value="왈">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">wang</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('왕');transcrire()" value="왕">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">wae</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('왜');transcrire()" value="왜">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">oe</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('외');transcrire()" value="외">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">oen</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('왼');transcrire()" value="왼">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yo</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('요');transcrire()" value="요">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yok</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('욕');transcrire()" value="욕">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yong</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('용');transcrire()" value="용">
+				</p>
+			</div>
+            <div class="as">
+                <span class="positionss">u</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('우');transcrire()" value="우">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">uk</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('욱');transcrire()" value="욱">
+				</p>
+			</div>
+			
+			
+			
+			<div class="esp"></div>
+			<div class="as">
+                <span class="positionss">un</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('운');transcrire()" value="운">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yeop</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('엽');transcrire()" value="엽">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ul</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('울');transcrire()" value="울">
+				</p>
+			</div>
+            <div class="as">
+                <span class="positionss">um</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('움');transcrire()" value="움">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ung</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('웅');transcrire()" value="웅">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">wo</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('워');transcrire()" value="워">
+				</p>
+			</div>
+            <div class="as">
+                <span class="positionss">won</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('원');transcrire()" value="원">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ol</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('올');transcrire()" value="올">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yak</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('약');transcrire()" value="약">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">wol</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('월');transcrire()" value="월">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">g/k</span>
+				<p>
+					<input type="button" class="bt" title="giyeok" onclick="alpha('ᄀ');transcrire()" value="ᄀ">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">wi</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('위');transcrire()" value="위">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yu</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('유');transcrire()" value="유">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yeom</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('염');transcrire()" value="염">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">kk</span>
+				<p>
+					<input type="button" class="bt" title="ssang-giyeok" onclick="alpha('ᄁ');transcrire()" value="ᄁ">
+				</p>
+			</div>
+			<div class="as" style="width: 70px;">
+				<p>
+					<input type="button" class="bt bf" data-clipboard-action="copy" data-clipboard-target="#bar" style="width: 100%;" value="copy">
+				</p>
+			</div>
+			<div class="esp"></div>
+			<!-- zaid -->
+			
+           
+			
+			<div class="as">
+                <span class="positionss">yuk</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('육');transcrire()" value="육">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yun</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('윤');transcrire()" value="윤">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">eu</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('으');transcrire()" value="으">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">eun</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('은');transcrire()" value="은">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">eul</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('을');transcrire()" value="을">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">eum</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('음');transcrire()" value="음">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">eup</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('읍');transcrire()" value="읍">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">eung</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('응');transcrire()" value="응">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ui</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('의');transcrire()" value="의">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">i</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('이');transcrire()" value="이">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ik</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('익');transcrire()" value="익">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">in</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('인');transcrire()" value="인">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">il</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('일');transcrire()" value="일">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">im</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('임');transcrire()" value="임">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ip</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('입');transcrire()" value="입">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">ing</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('잉');transcrire()" value="잉">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">iP</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('잎');transcrire()" value="잎">
+				</p>
+			</div>
+            <div class="esp"></div>
+           
+            <div class="as">
+				<p>
+                    <input type="button" class="bt bf" onClick="save()" value="save">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yul</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('율');transcrire()" value="율">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yung</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('융');transcrire()" value="융">
+				</p>
+			</div>
+			<div class="as">
+                <span class="positionss">yut</span>
+				<p>
+					<input type="button" class="bt" onClick="alpha('윷');transcrire()" value="윷">
+				</p>
+			</div>
+            <div class="as" style="width: 416px;">
+				<p>
+					<input type="button" class="bt bf" onClick="alpha(' ')" value="space" style="width: 100%;">
+				</p>
+			</div>
+            <div class="as">
+				<p>
+					<input type="button" class="bt" title="clear" onClick="reset();conversion.saisie.focus()" value="clear">
+				</p>
+			</div>
+        </div>
+    </div>
+		</form>
+	</div>
+	<div class="espb"></div>
+	
+    <script src="assets/code/base.js"></script>
+	<script src="assets/code/hang_s.js"></script>
+	<script src="assets/code/hang.js"></script>
+	<script src="assets/code/clipboard.js"></script>
+	<script src="assets/code/savee.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</body>
+
+</html>
+<script>
+		$('#newLineButton').click(function () {
+		var inp = $('#bar').val();
+		$('#bar').val(inp+'\r\n').focus();
+	})
+
+	
+	function onPressBackspace() {
+	var myTextarea = document.getElementById("bar");
+    myTextarea.value = myTextarea.value.substring(0, myTextarea.value.length - 1);
+	myTextarea.focus();
+	}
+    var clipboard = new Clipboard('.bf');
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    $(document).ready(function() {
+    $('select').select2();
+    });
+    </script>

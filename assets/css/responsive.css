@@ -1,0 +1,55 @@
+@media (max-width:767px){
+    footer { 
+    padding: 40px 0; 
+}
+img.footerLogo {  
+    margin-bottom: 40px;
+}
+.uniitemss{ 
+    grid-template-columns: repeat(1,.9fr);
+    
+}
+a.navbar-brand { 
+    width: 60%;
+}
+img.footerLogo {
+    width: 60%;
+}
+.navbar-expand-lg .navbar-nav {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.navbar-expand-lg .navbar-nav { 
+    width: 100%; 
+    margin: 20px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+li.nav-item {
+    width: 45%;
+}
+li.nav-item .nav-link { 
+    background-color: #ecefead1;
+    text-align: center;
+}
+li.nav-item a.btn.btn-success.rounded-pill {
+    display: block;
+    border-radius: 5px !important;
+}
+form#headersearch {
+    width: 100%;
+}
+
+}
+
+
+
+@media(max-width:425px){
+    a.gcs-card.card .universityImgCard {
+    width: 120px;
+}
+    
+}

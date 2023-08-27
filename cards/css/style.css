@@ -1,0 +1,334 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/* --------------------------Web Files-------------------------------------*/
+
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../assets/css/webFonts/fontawesome/fa-brands-400.eot");
+    src: url("../../assets/css/webFonts/fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../../assets/css/webFonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("../../assets/css/webFonts/fontawesome/fa-brands-400.woff") format("woff"), url("../../assets/css/webFonts/fontawesome/fa-brands-400.ttf") format("truetype"), url("../../assets/css/webFonts/fontawesome/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/css/webFonts/fontawesome/fa-regular-400.eot");
+    src: url("../../assets/css/webFonts/fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../../assets/css/webFonts/fontawesome/fa-regular-400.woff2") format("woff2"), url("../../assets/css/webFonts/fontawesome/fa-regular-400.woff") format("woff"), url("../../assets/css/webFonts/fa-regular-400.ttf") format("truetype"), url("../../assets/css/webFonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+.far {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    src: url("../../assets/css/webFonts/fa-solid-900.eot");
+    src: url("../../assets/css/webFonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../../assets/css/webFonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("../../assets/css/webFonts/fontawesome/fa-solid-900.woff") format("woff"), url("../../assets/css/webFonts/fontawesome/fa-solid-900.ttf") format("truetype"), url("../../assets/css/webFonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+
+@font-face {
+    font-family: 'AvenirLTStd-black';
+    font-weight: 300;
+    src: url("../../assets/css/webFonts/Circular/AvenirLTStd-Black.woff");
+    src: url("../../assets/css/webFonts/Circular/AvenirLTStd-Black.woff") format("woff");
+}
+@font-face {
+    font-family: 'AvenirLTStd-light';
+    font-style: normal;
+    font-weight: 300;
+    src: url("../../assets/css/webFonts/Circular/AvenirLTStd-Light.woff");
+    src: url("../../assets/css/webFonts/Circular/AvenirLTStd-Light.woff") format("woff");
+}
+@font-face {
+    font-family: 'AvenirLTStd-book';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../../assets/css/webFonts/Circular/AvenirLTStd-Book.woff");
+    src: url("../../assets/css/webFonts/Circular/AvenirLTStd-Book.woff") format("woff");
+}
+@font-face {
+    font-family: 'AvenirLTStd-BookOblique';
+    
+    font-weight: 700;
+    src: url("../../assets/css/webFonts/Circular/AvenirLTStd-BookOblique.woff");
+    src: url("../../assets/css/webFonts/Circular/AvenirLTStd-BookOblique.woff") format("woff");
+}
+@font-face {
+    font-family: 'AvenirLTStd-heavy';
+    font-weight: 700;
+    src: url("../../assets/css/webFonts/Circular/AvenirLTStd-heavy.woff");
+    src: url("../../assets/css/webFonts/Circular/AvenirLTStd-heavy.woff") format("woff");
+}
+@font-face {
+    font-family: 'AvenirLTStd-Medium';
+    src: url("../../assets/css/webFonts/Circular/AvenirLTStd-Medium.woff");
+    src: url("../../assets/css/webFonts/Circular/AvenirLTStd-Medium.woff") format("woff");
+}
+
+.bold{
+    font-family: 'AvenirLTStd-heavy';
+}
+.light{
+    font-family: 'AvenirLTStd-light';
+}
+.fa,
+.fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    transition: .7s;
+}
+
+
+/* Transition effects*/
+
+.transition_3 {
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+}
+
+.transition_2 {
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -o-transition: .2s;
+}
+
+.transition_7 {
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -o-transition: .7s;
+}
+
+.wow {
+    visibility: hidden;
+}
+
+* {
+    text-decoration: none;
+    outline: none;
+    font-family: 'AvenirLTStd-book';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#menu:not(.mm-menu) {
+    display: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body,
+h3,
+h1,
+h2,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -o-transition: .7s;
+    -ms-transition: .7s;
+}
+
+a {
+    text-decoration: none;
+    transition: .7s;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+table {
+    width: 100%;
+}
+
+::selection {
+    background: #32c850 !important;
+    color: #ffffff;
+}
+.btn-success{
+    background: #32c850 !important;
+    color: #ffffff;
+}
+.bg-success{
+    background: #32c850 !important; 
+}
+.text-success{
+    color: #32c850 !important;
+}
+
+/* --------------------------Web Files close-------------------------------------*/
+
+
+/* --------------------------Fonts Classes-------------------------------------*/
+
+
+/* --------------------------Fonts Classes-------------------------------------*/
+
+
+/* --------------------------Main Styling-------------------------------------*/
+
+.main-container {
+    width: 100%;
+    position: relative;
+    max-width: 1700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.row{
+    margin: 0;
+}
+.list-style-unlist{
+    list-style: none !important;
+}
+div#preloader {
+    overflow: hidden;
+    background: url(../webImages/1.gif);
+    background-color: rgba(5, 141, 220, 0.9);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999999;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #32c850;
+    border-radius: 10px 10px;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #cfcfcf;
+}
+.fw-200 {
+    font-weight: 200;
+}
+.column-3{
+    width: 30%;
+    position: relative;
+}
+.column-7{
+    width: 70%;
+    position: relative;
+}
+.form-row{
+    flex-direction: row !important;
+}
+.table{
+    background-color: #32c850;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+/* --------------------------Main Styling-------------------------------------*/
+
+
+/* --------------------------Header Styling-------------------------------------*/
+
+/* --------------------------Header Styling close -------------------------------------*/
+
+
+/* --------------------------Content Styling -------------------------------------*/
+
+/* --------------------------Content Styling close -------------------------------------*/
+
+
+/* --------------------------owl_content Styling  -------------------------------------*/
+
+
+/* --------------------------owl_content Styling close -------------------------------------*/
+
+
+/* --------------------------Footer Styling --------------------------------------------*/
+
+
+/* --------------------------Footer Styling close---------------------------------------*/
+
+
+/* --------------------------pop Styling close-------------------------------------*/
+
+
+/* --------------------------selection Styling-------------------------------------*/
+
+
+/* --------------------------selection Styling close-------------------------------------*/
+
+
+/* --------------------------Owl Styling -------------------------------------*/
+
+
+/* --------------------------owl Styling close-------------------------------------*/
+
+
+/* --------------------------inner Styling-------------------------------------*/
+
+
+/* --------------------------inner Styling-------------------------------------*/
+
+
+/* --------------------------tabs Styling close-------------------------------------*/
+
+
+/* --------------------------tabs2 Styling-------------------------------------*/
+
+
+/* --------------------------tabs2 Styling close-------------------------------------*/
+
+
+/* --------------------------dropdown Styling -------------------------------------*/
+
+
+/* --------------------------dropdown Styling close-------------------------------------*/

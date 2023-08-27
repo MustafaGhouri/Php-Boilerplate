@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Erreur</title>
+<link href="https://www.lexilogos.com/css/style.css" rel="stylesheet" type="text/css">
+<style>
+#livesearch a { color: #0000E6; text-decoration: none; }
+#livesearch a:hover { color: #DD0000; text-decoration: underline; }
+#livesearch a:focus { color: #DD0000; text-decoration: underline; }
+.die { display:table-cell; padding-right: 1.5em; }
+.dif { display:table-cell; }
+.envoi { background-color:white;  border: none; color: #330066; font-family:Verdana;  padding: 0.1em 0.1em;  text-decoration: underline; }
+.envoi:hover { background-color:yellow;  border: none;  color: red;  padding: 0.1em 0.1em;  text-decoration: none; cursor:pointer ; }
+</style>
+<script src="https://www.lexilogos.com/z/live_index.js"></script>
+</head>
+<body onLoad="f.q.focus()">
+<div class="ca"><a href="https://www.lexilogos.com/nouveau.htm"><img src="https://www.lexilogos.com/images/lexilogos_papagai.gif" class="img-0" title="quoi de neuf ? le sommaire du mois" alt="nouveau"></a></div>
+<div class="cb"><a href="https://www.lexilogos.com/index.htm"><img src="https://www.lexilogos.com/images/lexilogos.gif" class="img-0" title="dictionnaire en ligne &gt; index" alt="Lexilogos"></a></div>
+
+
+<div class="espa"></div>
+<div style="margin-left:14%;"><br>
+
+ERREUR&#8239;!<br>
+Cette page n'existe pas&#8239;!
+
+<div class="espa"></div>
+
+<p class="pl-b">écrire un mot-clé et sélectionner une page, ou rechercher sur le site&#8239;: </p>
+<form class="pl-b" name="f" method="get" action="https://www.google.com/search" target="_blank">
+
+<noscript>
+<span class="span-red">Attention ! &nbsp; JavaScript n'est pas activé.</span><br>
+Vous devez activer JavaScript dans votre navigateur pour pouvoir utiliser Lexilogos&#8239;: veuillez suivre les <a class="ext" href="https://www.enable-javascript.com/fr/" target="_blank">instructions</a>.<br><br>
+</noscript>
+<div class="die"><input type="button" class="eff" title="effacer" onClick="reset();delResult();f.q.focus()" value=""> </div>
+<div class="dif">
+<input type="hidden" name="num" value="50">
+<input type="hidden" name="hl" value="fr">
+<input type="hidden" name="sitesearch" value="www.lexilogos.com">
+<input type="text" autocomplete="off" name="q" class="iptb" onkeyup="showResult(this.value)">
+<input name="submit" type="submit" class="sub" title="envoi !" value="">
+<div id="livesearch">
+</div>
+</div>
+</form>
+</div>
+
+<div class="espa"></div>
+<p class="pp"><span class="ji">&#8594;</span> <a href="https://www.lexilogos.com/index.htm">Lexilogos</a> </p>
+<p class="pp"><span class="ji">&#8594;</span> <a href="https://www.lexilogos.com/nouveau.htm">Nouveautés &amp; mises à jour</a> </p>
+
+<div class="espa"></div>
+</body>
+</html>

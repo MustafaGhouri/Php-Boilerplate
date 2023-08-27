@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Keyboard | Hindi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="Keywords" content="">
+	<link rel="shortcut icon" href="">
+	<style>
+	
+	.as {
+    padding-bottom: 0px !important;
+}
+	</style>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	
+</head>
+
+<body onLoad="conversion.saisie.focus()">
+
+	<div class="name">
+		<br> <span class="kb-t">Hindi</span></div>
+
+	<div class="esp"></div>
+	<div class="center">
+		<form>
+			<select name="select" onChange="window.location=this.options[this.selectedIndex].value">
+				<option disabled selected>Select Language</option>
+				<option value="arabic.html">Arabic</option>
+				<option value="russian.html">Russian</option>
+				<option value="korean.html">Korean</option>
+				<option value="hindi.html">Hindi</option>
+				<option value="urdu.html">Urdu</option>
+			</select>
+		</form>
+	
+		<br>
+		<form name="conversion">
+			
+			<textarea name="saisie" id="bar" onKeyUp="transcrire()" rows="4" class="cadr"></textarea>
+			<br>
+			<br>
+			
+			<div class="espc"></div>
+			<div class="rtl">
+				<div class="bg_color">
+					<div class="as" style="width: 108px;">
+						<p>
+							<input type="button" class="bt bf" onClick="onPressBackspace()" value="backspace" style="width: 100%;">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">0</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('०')" value="०">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">1</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('१')" value="१">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">2</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('२')" value="२">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">3</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('३')" value="३">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">4</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('४')" value="४">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">5</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('५')" value="५">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">6</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('६')" value="६">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">7</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('७')" value="७">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">8</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('८')" value="८">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">9</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('९')" value="९">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">Ḍha</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ढ')" value="ढ">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">Ṇa</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ण')" value="ण">
+						</p>
+					</div>
+					
+					<div class="as">
+						<span class="positionss">ri</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ऋ')" value="ऋ">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">rī</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ॠ')" value="ॠ">
+						</p>
+					</div>
+					<div class="esp"></div>
+					<div class="as" style="width:72px;">
+						<p>
+							<input type="button" class="bt bf" id="newLineButton"  value="enter" style="width: 100%;">
+						</p>
+					</div>
+						<div class="as">
+                        <span class="positionss">ka</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('क')" value="क">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">kha</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ख')" value="ख">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">ga</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ग')" value="ग">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">gha</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('घ')" value="घ">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">nga</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ङ')" value="ङ">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">ca</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('च')" value="च">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">cha</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('छ')" value="छ">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">ja</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ज')" value="ज">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">jha</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('झ')" value="झ">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">ña</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ञ')" value="ञ">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">Ṭa</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ट')" value="ट">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">Ṭha</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ठ')" value="ठ">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">Ḍa</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ड')" value="ड">
+						</p>
+					</div>
+					
+					<div class="as" style="width: 70px;">
+						<p>
+							<input type="button" class="bt bf" data-clipboard-action="copy" data-clipboard-target="#bar" style="width: 100%;" value="copy">
+						</p>
+					</div>
+					<div class="esp"></div>
+					<div class="as">
+                        <span class="positionss">ta</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('त')" value="त">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">tha</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('थ')" value="थ">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">da</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('द')" value="द">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">dha</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ध')" value="ध">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">na</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('न')" value="न">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">pa</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('प')" value="प">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">pha</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('फ')" value="फ">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">ba</span>
+                        
+						<p>
+							<input type="button" class="bt" onclick="alpha('ब')" value="ब">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">bha</span>
+                        
+						<p>
+							<input type="button" class="bt" onclick="alpha('भ')" value="भ">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">ma</span>
+                        
+						<p>
+							<input type="button" class="bt" onclick="alpha('म')" value="म">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">qa</span>
+
+						<p>
+							<input type="button" class="bt" onclick="alpha('क़')" value="क़">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">Xa</span>
+
+						<p>
+							<input type="button" class="bt" onclick="alpha('ख़')" value="ख़">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">Ya</span>
+
+						<p>
+							<input type="button" class="bt" onclick="alpha('ग़')" value="ग़">
+						</p>
+					</div>
+					<div class="as">
+                        <span class="positionss">za</span>
+
+						<p>
+							<input type="button" class="bt" onclick="alpha('ज़')" value="ज़">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">Ṛa</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ड़')" value="ड़">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">Ṛha</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ढ़')" value="ढ़">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">fa</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('फ़')" value="फ़">
+						</p>
+					</div>
+					<div class="esp"></div>
+						<div class="as">
+							<span class="positionss">ya</span>
+							<p>
+								<input type="button" class="bt" onclick="alpha('य')" value="य">
+							</p>
+						</div>
+						<div class="as">
+							<span class="positionss">ra</span>
+							<p>
+								<input type="button" class="bt" onclick="alpha('र')" value="र">
+							</p>
+						</div>
+						<div class="as">
+							<span class="positionss">la</span>
+							<p>
+								<input type="button" class="bt" onclick="alpha('ल')" value="ल">
+							</p>
+						</div>
+						<div class="as">
+							<span class="positionss">Ḷa</span>
+							<p>
+								<input type="button" class="bt" onclick="alpha('ळ')" value="ळ">
+							</p>
+							
+						</div>
+						<div class="as">
+							<span class="positionss">?</span>
+							<p>
+								<input type="button" class="bt" onclick="alpha('ऴ')" value="ऴ">
+							</p>
+						</div>
+						<div class="as">
+							<span class="positionss">va</span>
+							<p>
+								<input type="button" class="bt" onclick="alpha('व')" value="व">
+							</p>
+						</div>
+						<div class="as">
+							<span class="positionss">ha</span>
+							<p>
+								<input type="button" class="bt" onclick="alpha('ह')" value="ह">
+							</p>
+						</div>
+					
+						<div class="as">
+							<span class="positionss">śa</span>
+							<p>
+								<input type="button" class="bt" onclick="alpha('श')" value="श">
+							</p>
+						</div>
+						<div class="as">
+							<span class="positionss">Ṣa</span>
+							<p>
+								<input type="button" class="bt" onclick="alpha('ष')" value="ष">
+							</p>
+						</div>
+						<div class="as">
+							<span class="positionss">sa</span>
+							<p>
+								<input type="button" class="bt" onclick="alpha('स')" value="स">
+							</p>
+						</div>
+				
+						<div class="as">
+							<span class="positionss">a</span>
+							<p>
+								<input type="button" class="bt" onclick="alpha('अ')" value="अ">
+							</p>
+						</div>
+				<div class="as">
+					<span class="positionss">ā</span>
+					<p>
+						<input type="button" class="bt" onclick="alpha('आ')" value="आ">
+					</p>
+				</div>
+				<div class="as">
+					<span class="positionss">ā</span>
+					<p>
+						<input type="button" class="bt" onclick="alpha('ा')" value="ा">
+					</p>
+				</div>
+				<div class="as">
+					<span class="positionss">i</span>
+					<p>
+						<input type="button" class="bt" onclick="alpha('इ')" value="इ">
+					</p>
+				</div>
+				<div class="as">
+					<span class="positionss">ī</span>
+					<p>
+						<input type="button" class="bt" onclick="alpha('ई')" value="ई">
+					</p>
+				</div>
+				<div class="as">
+					<span class="positionss">u</span>
+					<p>
+						<input type="button" class="bt" onclick="alpha('उ')" value="उ">
+					</p>
+				</div>
+				<div class="as">
+					<span class="positionss">ū</span>
+					<p>
+						<input type="button" class="bt" onclick="alpha('ऊ')" value="ऊ">
+					</p>
+				</div>
+				<div class="esp"></div>
+				<div class="as" style="width: 71px">
+					<p>
+						<input type="button" class="bt" title="clear" style="width: 100%" onClick="reset();conversion.saisie.focus()" value="clear">
+					</p>
+				</div>
+					<div class="as">
+						<span class="positionss">li</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ऌ')" value="ऌ">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">lī</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ॡ')" value="ॡ">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">e</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ए')" value="ए">
+						</p>
+					</div>
+					
+					
+					<div class="as">
+						<span class="positionss">ai</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ऐ')" value="ऐ">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">o</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ओ')" value="ओ">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">au</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('औ')" value="औ">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">ऒ</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ऒ')" value="ऒ">
+						</p>
+					</div>
+					<div class="as">
+						<span class="positionss">e</span>
+						<p>
+							<input type="button" class="bt" onclick="alpha('ऍ')" value="ऍ">
+						</p>
+					</div>
+					<div class="as">
+					<span class="positionss">ऑ</span>
+					<p>
+						<input type="button" class="bt" onclick="alpha('ऑ')" value="ऑ">
+					</p>
+				</div>
+				<div class="as">
+					<span class="positionss">ऎ</span>
+					<p>
+						<input type="button" class="bt" onclick="alpha('ऎ')" value="ऎ">
+					</p>
+				</div>
+				<div class="as">
+					<p>
+					<input type="button" class="bt" title="virama" onclick="alpha('्')" value="्">
+				</p>
+				</div>
+				<div class="as">
+					<p>
+						<input type="button" class="bt" onclick="alpha('ि')" value="ि">
+					</p>
+				</div>
+				<div class="as">
+					<p>
+						<input type="button" class="bt" onclick="alpha('ी')" value="ी">
+					</p>
+				</div>
+				<div class="as">
+					<p>
+						<input type="button" class="bt" onclick="alpha('ु')" value="ु">
+					</p>
+				</div>
+				<div class="as">
+					<p>
+						<input type="button" class="bt" onclick="alpha('ू')" value="ू">
+					</p>
+				</div>
+				
+				<div class="esp"></div>
+				<div class="as">
+					<p>
+						<input type="button" class="bt" onclick="alpha('ृ')" value="ृ">
+					</p>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				<div class="as">
+					<p>
+						<input type="button" class="bt" onclick="alpha('ॄ')" value="ॄ">
+					</p>
+				</div>
+				<div class="as">
+					<p>
+						<input type="button" class="bt" onclick="alpha('ॢ')" value="ॢ">
+					</p>
+				</div>
+				<div class="as">
+					<p>
+						<input type="button" class="bt" onclick="alpha('ॣ')" value="ॣ">
+					</p>
+				</div>
+				
+				<!-- <div class="as">
+					<p>
+						<input type="button" class="bt" title="udatta" onclick="alpha('॑')" value="&nbsp;॑">
+					</p>
+				</div>
+				<div class="as">
+					<p>
+						<input type="button" class="bt" title="anudatta" onclick="alpha('॒')" value="&nbsp;॒">
+					</p>
+				</div>
+				<div class="as">
+					<p>
+						<input type="button" class="bt" title="grave accent" onclick="alpha('॓')" value="&nbsp;॓">
+					</p>
+				</div>
+				<div class="as">
+					<p>
+						<input type="button" class="bt" title="acute accent" onclick="alpha('॔')" value="&nbsp;॔">
+					</p>
+				</div> -->
+				<div class="as">
+					<p>
+						<input type="button" class="bt" title="candra bindu" onclick="alpha('ँ')" value="ँ">
+					</p>
+				</div>
+				<div class="as" style="width: 245px;">
+					<p>
+						<input type="button" class="bt bf" onClick="alpha(' ')" value="space" style="width: 100%;">
+					</p>
+				</div>
+				<div class="as">
+					<p>
+						<input type="button" class="bt" title="anusvara" onclick="alpha('ं')" value="ं">
+					</p>
+				</div>
+				<div class="as">
+					<p>
+						<input type="button" class="bt" title="visarga" onclick="alpha('ः')" value="ः">
+					</p>
+				</div>
+				<div class="as">
+					<p>
+						<input type="button" class="bt" title="nukta" onclick="alpha('़')" value="़">
+					</p>
+				</div>
+				<div class="as">
+					<p>
+						<input type="button" class="bt" title="nukta" onclick="alpha('़')" value="़">
+					</p>
+				</div>
+
+				<div class="as">
+					<p>
+						<input type="button" class="bt bf" onClick="save()" value="save">
+					</p>
+				</div>
+			</div>
+		</div>
+		</form>
+	</div>
+	<div class="espb"></div>
+	
+    <script src="assets/code/base.js"></script>
+	<script src="assets/code/cardeva.js"></script>
+	<script src="assets/code/clipboard.js"></script>
+	<script src="assets/code/savee.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</body>
+
+</html>
+<script>
+    	$('#newLineButton').click(function () {
+		var inp = $('#bar').val();
+		$('#bar').val(inp+'\r\n').focus();
+	})
+
+	
+	function onPressBackspace() {
+	var myTextarea = document.getElementById("bar");
+    myTextarea.value = myTextarea.value.substring(0, myTextarea.value.length - 1);
+	myTextarea.focus();
+	}
+    var clipboard = new Clipboard('.bf');
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    $(document).ready(function() {
+    $('select').select2();
+    });
+    </script>
